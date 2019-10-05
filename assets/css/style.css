@@ -1,0 +1,37 @@
+.background {
+  /* The image used  */
+  background-image: url("../images/background.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.jumbotron-fluid {
+  text-align: center;
+  background-color: white;
+}
+
+h1,
+h4 {
+  font-family: "Poiret One", cursive;
+}
+
+.crystals {
+  max-width: 200px;
+  margin: 2%;
+}
+
+#container {
+  margin: auto;
+  width: 1000px;
+}
+
+.card {
+  float: left;
+}

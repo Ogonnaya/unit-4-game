@@ -5,11 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" /> -->
+
+    <!-- Link to Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Link to CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body class="background">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">CRYSTAL COLLECTOR</h1>
+        <br />
+        <p>
+          You will be given a random number at the start of the game. There are
+          four crystals below. By clicking on a crystal you will add a specific
+          amount of points to your total score. You win the game by matching
+          your total score to the ramdom number, you lose the game if your total
+          score goes above the random number. The value of each crystal is
+          hidden from you until you click on it. Each time when the game starts,
+          the game will change the values of each crystal.
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto" style="width: 1000px;">
+      <img
+        class="crystals"
+        src="./assets/images/Mineral-01.png"
+        class="rounded float-left"
+        alt="Crystal 1"
+      />
+      <img
+        class="crystals"
+        src="./assets/images/Mineral-12.png"
+        class="rounded float-left"
+        alt="Crystal 2"
+      />
+      <img
+        class="crystals"
+        src="./assets/images/Mineral-05.png"
+        class="rounded float-left"
+        alt="Crystal 3"
+      />
+      <img
+        class="crystals"
+        src="./assets/images/Mineral-18.png"
+        class="rounded float-right"
+        alt="Crystal 4"
+      />
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">RANDOM NUMBER</h5>
+        <h5 class="card-subtitle mb-2 text-muted">120</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">TOTAL SCORE</h5>
+        <h5 class="card-subtitle mb-2 text-muted">0</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">WINS: 0</h5>
+        <h5 class="card-title">LOSSES: 0</h5>
+      </div>
+    </div>
+
     <!-- Link to Javascript -->
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
   </body>
