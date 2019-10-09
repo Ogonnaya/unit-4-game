@@ -24,10 +24,14 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+     
   </head>
   <body class="background">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
+
+      <!-- Heading -->
         <h1 class="display-4">CRYSTAL COLLECTOR</h1>
         <br />
         <p>
@@ -41,52 +45,78 @@
         </p>
       </div>
     </div>
-    <div class="mx-auto" style="width: 1000px;">
+    
+    <!-- Crystal images -->
+    <div class="container">
+    <div class="mx-auto" style="width: 760px;">
       <img
-        class="crystals"
+        id = "one" class="crystals"
         src="./assets/images/Mineral-01.png"
         class="rounded float-left"
         alt="Crystal 1"
       />
       <img
-        class="crystals"
+        id = "two" class="crystals"
         src="./assets/images/Mineral-12.png"
         class="rounded float-left"
         alt="Crystal 2"
       />
       <img
-        class="crystals"
+        id = "three" class="crystals"
         src="./assets/images/Mineral-05.png"
         class="rounded float-left"
         alt="Crystal 3"
       />
       <img
-        class="crystals"
+        id = "four" class="crystals"
         src="./assets/images/Mineral-18.png"
         class="rounded float-right"
         alt="Crystal 4"
       />
     </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">RANDOM NUMBER</h5>
-        <h5 class="card-subtitle mb-2 text-muted">120</h5>
-      </div>
-    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">TOTAL SCORE</h5>
-        <h5 class="card-subtitle mb-2 text-muted">0</h5>
+            <!-- Random number -->
+            <h5 class="card-title">TARGET SCORE</h5>
+            <h5 id="random-number" class="card-subtitle mb-2 text-muted">120</h5>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col"><div class="card" style="width: 18rem;">
+        <div class="card-body">
 
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">WINS: 0</h5>
-        <h5 class="card-title">LOSSES: 0</h5>
+          <!-- Player guesses -->
+          <h5 class="card-title">CURRENT SCORE</h5>
+          <h5 id="total-score" class="card-subtitle mb-2 text-muted">0</h5>
+        </div>
       </div>
     </div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+
+            <!-- Wins & losses -->
+            <h5 id="wins" class="card-title">WINS: 0</h5>
+            <h5 id="losses" class="card-title">LOSSES: 0</h5>
+          </div>
+          <div id="button"></div>
+        </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    
+    <!-- Link to JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Link to Javascript -->
     <script type="text/javascript" src="./assets/javascript/game.js"></script>

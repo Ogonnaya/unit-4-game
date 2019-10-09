@@ -1,20 +1,20 @@
-.background {
-  /* The image used  */
+/* .background {
+ The image used 
   background-image: url("../images/background.png");
-
-  /* Full height */
+Full height
   height: 100%;
 
-  /* Center and scale the image nicely */
+Center and scale the image nicely
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 
 .jumbotron-fluid {
   text-align: center;
   background-color: white;
+  padding-bottom: 2rem;
 }
 
 h1,
@@ -23,7 +23,7 @@ h4 {
 }
 
 .crystals {
-  max-width: 200px;
+  max-width: 150px;
   margin: 2%;
 }
 
@@ -32,6 +32,20 @@ h4 {
   width: 1000px;
 }
 
+.crystals:hover {
+  opacity: 0.4;
+}
+
 .card {
   float: left;
+  width: 760px;
+  text-align: center;
+  padding: 10px;
+  border-width: 0px;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 0rem;
+  }
 }
