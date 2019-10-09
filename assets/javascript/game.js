@@ -60,18 +60,25 @@ $(".crystals").on("click", function() {
 
 // If player wins...
 function playerWins() {
-  $("#button").prepend("YOU WIN!" + " <div><button>Play Again</button></div>");
+  $("#button")
+    .html("YOU WIN!" + " <div><button>Play Again</button></div>")
+    .show();
   wins++;
   $("#wins").text("Wins: " + wins);
 }
 
 // If player loses...
 function playerLoses() {
-  $("#button").prepend("YOU LOSE" + " <div><button>Play Again</button><div>");
+  $("#button")
+    .html("YOU LOSE" + " <div><button>Play Again</button>")
+    .show();
   losses++;
   $("#losses").text("Losses: " + losses);
 }
+
 $("#button").on("click", function() {
   startGame();
+  $("#button").hide();
 });
+
 startGame();
